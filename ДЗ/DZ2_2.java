@@ -1,27 +1,17 @@
 package ДЗ;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
-
-import javax.swing.Spring;
-
-import java.io.BufferedReader;
-import java.io.Console;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 
 public class DZ2_2 {
 
-    public static void write(String[] word) {
+    public static void write(String newString) {
+
         File file = new File("new.txt");
-        String joinedString = Arrays.toString(word);
         try{
             FileWriter fr = new FileWriter(file,true);
-            fr.write(joinedString.toString());
+            fr.write(newString.toString());
             fr.write("\n");
             fr.close();
         }
@@ -30,27 +20,27 @@ public class DZ2_2 {
         }
     }
 
+    public static void repAndWrite(String newString) throws IOException {
 
-
+        newString = newString.replace(":","");
+        newString = newString.replace(",","");
+        newString = newString.replace("\"","");
+        newString = newString.replace("фамилия","Студент ");
+        newString = newString.replace("оценка"," получил ");
+        newString = newString.replace("предмет"," по предмету ");
+        write(newString);
+    }
+       
     public static void main(String[] args) throws IOException {
         
         File file = new File("Text.txt");
         Scanner scanner = new Scanner(file);
-        String line = scanner.nextLine();
-        String[] word = line.split(":");
-        System.out.println(Arrays.toString(word));
-        write(word);
-        while (line != null) {
-            line = scanner.nextLine();
-            word = line.split(":");
-            write(word);
-            System.out.println(Arrays.toString(word));
-        }
+        StringBuilder sb = new StringBuilder(scanner.nextLine());
+        String str = sb.toString();
+        while (str != null){
+            repAndWrite(str);
+            sb = new StringBuilder(scanner.nextLine());
+            str = sb.toString();}
+        scanner.close();
     }
-
-
-//     public static void main(String[] args) {
-//         StringBuffer sb = new StringBuffer("new.txt");
-//         sb.replace(0, 0, null)
-//    }
 }

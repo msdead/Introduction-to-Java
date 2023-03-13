@@ -32,28 +32,14 @@ public class Main {
         }
 
 
-        Logger logger = Logger.getLogger(Ex0043.class.getName());
-        logger.setLevel(Level.INFO);
-        ConsoleHandler ch = new ConsoleHandler ();
-        logger.addHandler(ch);
-        SimpleFormatter sFormat = new SimpleFormatter ();
-        ch.setFormatter(sFormat);
-        logger.log(Level.WARNING, "Тестовое логирование" );
-        logger.info("Тестовое логирование" );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // Logger logger = Logger.getLogger(Ex0043.class.getName());
+        // logger.setLevel(Level.INFO);
+        // ConsoleHandler ch = new ConsoleHandler ();
+        // logger.addHandler(ch);
+        // SimpleFormatter sFormat = new SimpleFormatter ();
+        // ch.setFormatter(sFormat);
+        // logger.log(Level.WARNING, "Тестовое логирование" );
+        // logger.info("Тестовое логирование" );
 
 
 
