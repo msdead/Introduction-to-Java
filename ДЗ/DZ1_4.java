@@ -30,7 +30,7 @@ public class DZ1_4 {
             d = b;
             if((a * 10 + b)+(c * 10 + d) == e){
                 System.out.printf("Под знак ? необходимо поместить цифру: " + b);}
-            else System.out.printf("Решения нет");
+            else System.out.println("Решения нет");
         }
 
         if(a == c){
@@ -38,7 +38,7 @@ public class DZ1_4 {
             c = a;
             if((a * 10 + b)+(c * 10 + d) == e){
                 System.out.printf("Под знак ? необходимо поместить цифру: " + a);}
-            else System.out.printf("Решения нет");
+            else System.out.println("Решения нет");
         }
 
         if (a == d && a == -1 && d == -1){
@@ -46,7 +46,7 @@ public class DZ1_4 {
             d = (e - c * 10 - c)%10;
             if((a * 10 + b)+(c * 10 + d) == e){
                 System.out.printf("Под знак ? необходимо поместить цифру: " + a);}
-            else System.out.printf("Решения нет");
+            else System.out.println("Решения нет");
         }
 
         if(b == c && b == -1 && c == -1){
@@ -54,10 +54,9 @@ public class DZ1_4 {
             c = (e - a * 10 - d)/10;
             if((a * 10 + b)+(c * 10 + d) == e){
                 System.out.printf("Под знак ? необходимо поместить цифру: " + b);}
-            else System.out.printf("Решения нет");
+            else System.out.println("Решения нет");
         }
 
-        if (e != (a * 10 + b) + (c * 10 + d)){System.out.printf("Где-то есть ошибка");}
         iScanner.close();
     }
 }
