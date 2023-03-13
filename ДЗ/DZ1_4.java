@@ -11,60 +11,53 @@ public class DZ1_4 {
         String w = iScanner.next();
         System.out.println("Введите ответ: ");
         int e = iScanner.nextInt();
-        int i;
-        String q1 = q.replace("?", i);
-        String w1 = w.replace("?", i );
-        
-        // int q2 = Integer.parseInt (q1);
-        // int w2 = Integer.parseInt (w1);
-        
-        int q2 = 0;
-        int w2 = 0;
-        int result1 = 0;
-        int result2 = 0;
-        // char result3 = 0;
-        // char result4 = 0;
-        
 
-        // char[] q3 = q.toCharArray();
-        // for (int j = 0; j < q3.length; j++) {
-        //     result1 = q3[0];
-        //     result2 = q3[1];
-        // }
-       
-        // char[] w3 = w.toCharArray();
-        // for(int k = 0; k < w3.length; k++) {
-        //     result3 = w3[0];
-        //     result4 = w3[1];
-        // }
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        int d = 0;
 
-        // if(result2 == "0"){
+        char[] q1 = q.toCharArray();
+        char[] w1 = w.toCharArray();
 
-        // }
+        a = Character.digit(q1[0], 10);
+        b = Character.digit(q1[1], 10);
+        c = Character.digit(w1[0], 10);
+        d = Character.digit(w1[1], 10);
 
-
-
-
-        for (int i = 0; i < 10; i++) {
-            q2 = Integer.parseInt (q1);
-            w2 = Integer.parseInt (w1);
-            // System.out.println(q2);
-            // System.out.println(w2);
-            if (q2 + w2 == e);{
-                System.out.printf("Для решения уравнения требуется подставить: ", i);
-                result1 = q2;
-                result2 = w2;
-            }
+        if(b == d){
+            b = (e - a * 10 - c * 10)/2;
+            d = b;
+            if((a * 10 + b)+(c * 10 + d) == e){
+                System.out.printf("Под знак ? необходимо поместить цифру: " + b);}
+            else System.out.printf("Решения нет");
         }
-        if (result1 + result2 != e){
-            System.out.print("Решения нет!!!");
-        }
-        
-        // // q + w = e
-        System.out.println(result1);
-        System.out.println(result2);
-        System.out.println(e);
 
-     
+        if(a == c){
+            a = (e - b - d)/10/2;
+            c = a;
+            if((a * 10 + b)+(c * 10 + d) == e){
+                System.out.printf("Под знак ? необходимо поместить цифру: " + a);}
+            else System.out.printf("Решения нет");
+        }
+
+        if (a == d && a == -1 && d == -1){
+            a = (e - c * 10 - c)/10;
+            d = (e - c * 10 - c)%10;
+            if((a * 10 + b)+(c * 10 + d) == e){
+                System.out.printf("Под знак ? необходимо поместить цифру: " + a);}
+            else System.out.printf("Решения нет");
+        }
+
+        if(b == c && b == -1 && c == -1){
+            b = (e - a * 10 - d)%10;
+            c = (e - a * 10 - d)/10;
+            if((a * 10 + b)+(c * 10 + d) == e){
+                System.out.printf("Под знак ? необходимо поместить цифру: " + b);}
+            else System.out.printf("Решения нет");
+        }
+
+        if (e != (a * 10 + b) + (c * 10 + d)){System.out.printf("Где-то есть ошибка");}
+        iScanner.close();
     }
 }
