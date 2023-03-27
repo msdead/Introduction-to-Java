@@ -50,46 +50,19 @@ public class DZ_6_1 {
             if (answer == 1){
                 ozu = 8;
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findOzu(ozu) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findOzu(ozu) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findOzu(ozu) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findOzu(ozu) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findOzu(ozu) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(ozu, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
             if (answer == 2){
                 ozu = 16;
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findOzu(ozu) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findOzu(ozu) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findOzu(ozu) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findOzu(ozu) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findOzu(ozu) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(ozu, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
             if (answer == 3){
                 ozu = 32;
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findOzu(ozu) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findOzu(ozu) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findOzu(ozu) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findOzu(ozu) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findOzu(ozu) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(ozu, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
         }
@@ -109,46 +82,19 @@ public class DZ_6_1 {
             if (answer == 1){
                 hddvolume = 256;
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(hddvolume, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
             if (answer == 2){
                 hddvolume = 512;
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(hddvolume, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
             if (answer == 3){
                 hddvolume = 1024;
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findHDDvolume(hddvolume) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(hddvolume, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
         }
@@ -166,31 +112,13 @@ public class DZ_6_1 {
           if (answer == 1){
                 os = "windows";
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findOs(os) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findOs(os) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findOs(os) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findOs(os) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findOs(os) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(os, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
             if (answer == 2){
                 os = "linux";
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findOs(os) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findOs(os) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findOs(os) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findOs(os) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findOs(os) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(os, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
         }
@@ -210,46 +138,19 @@ public class DZ_6_1 {
             if (answer == 1){
                 color = "black";
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findColor(color) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findColor(color) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findColor(color) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findColor(color) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findColor(color) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(color, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
             if (answer == 2){
                 color = "blue";
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findColor(color) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findColor(color) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findColor(color) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findColor(color) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findColor(color) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(color, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
             if (answer == 3){
                 color = "silver";
                 System.out.println("Вам подойдет ноутбук: ");
-                if (notebook1.findColor(color) == true){
-                    System.out.println(notebook1);}
-                if (notebook2.findColor(color) == true){
-                    System.out.println(notebook2);}
-                if (notebook3.findColor(color) == true){
-                    System.out.println(notebook3);}
-                if (notebook4.findColor(color) == true){
-                    System.out.println(notebook4);}
-                if (notebook5.findColor(color) == true){
-                    System.out.println(notebook5);}
+                NoteBook.PrintResult(color, notebook1, notebook2, notebook3, notebook4, notebook5);
                 answer = 0;
             }
         }
